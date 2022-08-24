@@ -1,0 +1,67 @@
+body {
+    background: #e5e5e5;
+}
+ 
+.social-icon-wrap {
+    width: 550px;
+    margin: 100px auto;
+}
+ 
+.social-icon {
+    float: left;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3), 0 2px 0px rgba(255,255,255,0.4) inset, 0 -2px 0px rgba(0,0,0,0.5) inset;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+ 
+.social-icon i {
+    display: block;
+    z-index: 1;
+    color: #fff;
+    line-height: 100px;
+    font-size: 60px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+ 
+.social-icon:hover {
+    transform: translate(0, -15px);
+}
+ 
+.social-facebook {
+    background: linear-gradient(rgb(88, 128, 219), rgb(57, 85, 151));
+}
+ 
+.social-twitter {
+    background: linear-gradient(rgb(0, 183, 255), rgb(0, 111, 245));
+}
+ 
+.social-google-plus {
+    background: linear-gradient(rgb(254, 58, 47), rgb(221, 6, 4));
+}
+ 
+.social-instagram {
+    background: linear-gradient(rgb(255, 155, 14), rgb(215, 66, 0));
+    content: "\f16d"}
+
+ 
+.social-youtube {
+    background: linear-gradient(rgb(255, 35, 115), rgb(225, 12, 53));
+}
+ 
+.social-tumblr {
+    background: linear-gradient(rgb(78, 240, 252), rgb(49, 153, 200));
+}
+ 
+.social-behance {
+    background: linear-gradient(rgb(0, 146, 255), rgb(0, 86, 255));
+}
+ 
+.social-pinterest {
+    background: linear-gradient(rgb(242, 71, 77), rgb(189, 32, 38));
+}

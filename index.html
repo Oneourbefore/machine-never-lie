@@ -7,8 +7,9 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, 그리고 Bootstrap 기여자들">
     <meta name="generator" content="Hugo 0.88.1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     
-    <title>Bottom navbar example · Bootstrap v5.1</title>
+    <title>처음으로 만들어보는 웹</title>
 
     <link rel="canonical" href="https://getbootstrap.kr/docs/5.1/examples/navbar-bottom/">
 
@@ -45,22 +46,28 @@
     
   </head>
   <body>
-    <h1><a href="index.html">Making web</a></h1>
-  <ol>
-    <li><a href="https://www.instagram.com/_namstagram_/">instagram</a></li>
     
-    <li><a href="https://github.com/namsta9ramm">github</a></li>
-    <li><a href="https://www.dongguk.edu/eng/main">university</a></li>
+    <h1><a href="index.html"><center>Making web</center></a></h1>
+  <ol>
+    <br>
+    <br>
+
+    <center><span style="color:red">만든이</span>는 뭐하는사람인가?</center>
+   
   </ol>
   <div class="social-icon-wrap">
-    <div class="social-icon social-facebook"><a href="https://www.instagram.com/_namstagram_/"></a><i class="fa fa-facebook"></i></div>
-    <div class="social-icon social-twitter"><i class="fa fa-twitter"></i></div>
-    <div class="social-icon social-google-plus"><i class="fa fa-google-plus"></i></div>
-    <div class="social-icon social-instagram"><i class="fa fa-instagram"></i></div>
-    <div class="social-icon social-youtube"><i class="fa fa-youtube"></i></div>
-    <div class="social-icon social-tumblr"><i class="fa fa-tumblr"></i></div>
-    <div class="social-icon social-behance"><i class="fa fa-behance"></i></div>
-    <div class="social-icon social-pinterest"><i class="fa fa-pinterest-p"></i></div>
+    <li><a href="https://github.com/namsta9ramm" target="_blank" title="남경현의 깃허브로."><div class="social-icon social-facebook"></a><i class="fa fa-facebook"></i></div>
+    </a></li>
+    
+    <li><a href="https://blog.naver.com/david1510" target="_blank" title="남경현의 블로그로."><div class="social-icon social-twitter"><i class="fa fa-twitter"></i></div></a></li>
+    
+    <li><a href="https://www.dongguk.edu/eng/main" target="_blank" title="남경현의 대학교로."><div class="social-icon social-google-plus"><i class="fa fa-google-plus"></i></div>
+    </a></li>
+    
+    <li><a href="https://www.instagram.com/_namstagram_/" target="_blank" title="남경현의 인스타그램으로."><div class="social-icon social-instagram"><i class="fa fa-instagram"></i></div>
+    </a></li>
+    
+    
 </div>
     
     <div style="text-align : center;">
@@ -89,48 +96,44 @@
         
         </style>
          <p id='hello2'>Creating an automatic face recognition tool using html and css</p>
-    </div></p>
-    <p class="lead"><div style="text-align : center;"><input type="file" class="real-upload" accept="image/*" required multiple>
-    </div>
+         <input type="file" id="image" accept="image/*" onchange="setThumbnail(event);" multiple/>
+    <div id="image_container"></div>
+         <script>
+          function setThumbnail(event) {
+            for (var image of event.target.files) {
+              var reader = new FileReader();
+    
+              reader.onload = function(event) {
+                var img = document.createElement("img");
+                img.setAttribute("src", event.target.result);
+                document.querySelector("div#image_container").appendChild(img);
+              };
+    
+              console.log(image);
+              reader.readAsDataURL(image);
+            }
+          }
+        </script>
     
       
   
   </div>
 </main>
-<nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Bottom navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">About</a>
-        </li>
-        <li class="nav-item dropup">
-          <a class="nav-link dropdown-toggle" href="#" id="dropdown10" data-bs-toggle="dropdown" aria-expanded="false">Dropup</a>
-          <ul class="dropdown-menu" aria-labelledby="dropdown10">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
   
 </script>
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/63057c6a54f06e12d8905dcd/1gb6ms0kv';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
       
   </body>
 </html>
