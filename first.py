@@ -28,7 +28,8 @@ while True: # 특정 키를 누를 때까지 무한 반복
 # 카메라 객체 반환
 capture.release()
 cv2.destroyAllWindows()
- # Disable scientific notation for clarity
+
+# Disable scientific notation for clarity
 np.set_printoptions(suppress=True)
 
 # Load the model
